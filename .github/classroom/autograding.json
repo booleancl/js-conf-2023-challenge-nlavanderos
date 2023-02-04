@@ -13,7 +13,7 @@
     {
       "name": "ForEach",
       "setup": "npm install",
-      "run": "npm run test:ci 02_foreEach.test.js",
+      "run": "npm run test:ci 02_forEach.test.js",
       "input": "",
       "output": "",
       "comparison": "included",

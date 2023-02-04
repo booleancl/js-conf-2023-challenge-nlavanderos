@@ -27,7 +27,23 @@
 
 function map(array, callback){
   // Tu código acá:
-
+    let r = [];
+    try {
+      if (callback.length === 1) {
+        for (const element of array) {
+          let newMappedItem = callback(element);
+          r.push(newMappedItem);
+        }
+      } else if (callback.length === 3) {
+        for (let i = 0; i < array.length; i++) {
+          let newMappedItem = callback(array[i], i, array);
+          r.push(newMappedItem);
+        }
+      }
+    } catch (err) {
+      return "Error";
+    }
+    return r;
 }
 
 module.exports = {

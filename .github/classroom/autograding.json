@@ -1,24 +1,34 @@
 {
   "tests": [
     {
-      "name": "Callbacks in Arrays",
+      "name": "Map",
       "setup": "npm install",
-      "run": "npm run test:ci 01_callbacks_in_arrays.test.js",
+      "run": "npm run test:ci 01_map.test.js",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 30
+    },
+    {
+      "name": "ForEach",
+      "setup": "npm install",
+      "run": "npm run test:ci 02_foreEach.test.js",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 30
+    },
+    {
+      "name": "Filter",
+      "setup": "npm install",
+      "run": "npm run test:ci 03_filter.test.js",
       "input": "",
       "output": "",
       "comparison": "included",
       "timeout": 10,
       "points": 40
-    },
-    {
-      "name": "Arrays Methods",
-      "setup": "npm install",
-      "run": "npm run test:ci 02_array_callback_methods.test.js",
-      "input": "",
-      "output": "",
-      "comparison": "included",
-      "timeout": 10,
-      "points": 60
     }
   ]
 }

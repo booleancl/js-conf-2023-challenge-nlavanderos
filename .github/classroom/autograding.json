@@ -1,0 +1,24 @@
+{
+  "tests": [
+    {
+      "name": "Callbacks in Arrays",
+      "setup": "npm install",
+      "run": "npm run test:ci 01_callbacks_in_arrays.test.js",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 40
+    },
+    {
+      "name": "Arrays Methods",
+      "setup": "npm install",
+      "run": "npm run test:ci 02_array_callback_methods.test.js",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 60
+    }
+  ]
+}

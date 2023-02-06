@@ -18,11 +18,15 @@
 */
 
 function filter(array, callback){
-  var arrayLength = array.length;
-	var newArray = [];
+  let result=[]
+  for (let i = 0; i < array.length; i++) {
+    let isFound = callback(array[i], i, array)
+    if(isFound){
+      result.push(array[i])
+    }
 
-
-  return newArray;
+  }
+  return result
 }
 
 module.exports = {
